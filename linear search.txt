@@ -1,0 +1,18 @@
+
+class Main {
+    public static void main(String[] args) {
+         System.out.println(linearsearch(new int[]{10,2,5,3,7,8},5));
+        System.out.println(linearsearch(new int[]{10,2,5,3,7,8},7));
+        System.out.println(linearsearch(new int[]{10,2,5,3,7,8},20));
+    }
+    public static int linearsearch(int[] num,int target){
+      
+        for(int i=0;i<=num.length;i++){
+            if(target==num[i]){
+                return i;
+            }
+        }
+         return -1;
+    }
+    
+}
